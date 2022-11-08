@@ -1,70 +1,90 @@
-$colornavbarwhite: #fff;
-$colorazulclaro: #0084ff;
-$colorazulclar2: rgb(0, 132, 255);
-$coloroscuro: #0074e060;
 .section1{
-    background: url("../img/tiendaderopa.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 1440px;
-    height: 790px;
+  background: url("../img/tiendaderopa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: $widthresosulucion;
+  height: $heighthresosulucion;
+}
 
-    .bienvenida {
-        text-align: center;
-        padding: 250px;
-        font-weight: 10;
-        font-size: 30px;
-      }
+.bienvenida {
+  text-align: center;
+  padding: 250px;
+  font-weight: 10;
+  font-size: 30px;
 
-      .text1 {
-        color: $colornavbarwhite;
-        font-weight: 01;
-      }
-      
-      .text2 {
-        color: $colornavbarwhite;
-        font-weight: 01;
-        padding-bottom: 5px;
-        margin: 0px;
-      }
-
-      .azultext3 {
-        display: inline-block;
-        color: $colorazulclaro;
-        padding: 10px 0.9em;
-        font-size: 75%;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: baseline;
-        background-color: $coloroscuro;
-        border-radius: 50px;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-      }
-      .azultext2 {
-        color: $colorazulclar2;
-        text-decoration: bold;
-        font-weight: 10;
-      }
+  .text1 {
+    color: $colorfff;
+    font-weight: 01;
   }
+  .text2 {
+    color: $colorfff;
+    font-weight: 01;
+    padding-bottom: 5px;
+    margin: 0px;
+  }
+}
+
+.azultext3 {
+  display: inline-block;
+  color: $colorazulclaro;
+  padding: 10px 0.9em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: $coloroscuro;
+  border-radius: 50px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   
- 
+  .azultext2 {
+    color: $colorazulclaro;
+    text-decoration: bold;
+    font-weight: 10;
+  }
+}
+
+
+
 /*-------- RESPONSIVE --------*/
 
-@media screen and (max-width: 768px){
 
-    .section1{
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 768px;
-      height: 724px;
-      text-decoration: none;
+@if $vista == tablet {
+  @media screen and (max-width: 768px){
+
+.section1{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 768px;
+  height: 724px;
+  text-decoration: none;
     }
+  }
 }
-    
-    
-    /* BARRA LATERAL */
-    ::-webkit-scrollbar {
-      display: none;
+
+
+/* BARRA LATERAL */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+@if $vista == mobile {
+  @media screen and (max-width: 320px){
+
+  .section1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 724px;
+    text-decoration: none;
+    .losted {
+      width: 180px;
     }
+  }
+
+  }
+}
+ 
+/*-------- RESPONSIVE --------*/

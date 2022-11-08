@@ -12,21 +12,14 @@ body {
   background-color: #252525;
 }
 
+/*-------- HEADER --------*/
 nav {
   background: rgba(12, 133, 214, 0.3647058824);
   height: 80px;
   width: 100%;
 }
-nav nav ul {
-  float: right;
-  margin-right: 20px;
-}
-nav nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav nav ul li a {
+
+ul li a {
   color: #fff;
   font-size: 18px;
   padding: 7px 13px;
@@ -34,22 +27,25 @@ nav nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
 }
-nav li a:hover {
-  background: rgba(12, 133, 214, 0.3647058824);
+
+ul {
+  float: right;
+  margin-right: 20px;
+}
+
+ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+li a:hover {
+  background: rgba(12, 133, 214, 0.2549019608);
   color: #fff;
   transition: 0.5s;
 }
 
-.enlace {
-  position: absolute;
-  padding: 10px 15px;
-}
-.enlace .losted {
-  height: 90px;
-  width: 350px;
-  padding-bottom: 25px;
-}
-.enlace .checkbtn {
+.checkbtn {
   font-size: 30px;
   color: #fff;
   float: right;
@@ -64,44 +60,6 @@ nav li a:hover {
 }
 
 /*-------- RESPONSIVE --------*/
-@media (max-width: 768px) {
-  .enlace {
-    padding-left: 20px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-}
-@media (max-width: 768px) {
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  li a:hover, li a.active {
-    background: none;
-    color: #2c3e50;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-}
 @media (max-width: 320px) {
   .checkbtn {
     display: block;
@@ -132,6 +90,14 @@ nav li a:hover {
     left: 0;
   }
 }
+/* NOSOTROS*/
+/* SERVICIOS */
+/* PRODUCTOS */
+/* CONTACTO */
+/* FOOTER */
+/* INICIO */
+/* NAVBAR */
+/* OPERACIONES */
 .section1 {
   background: url("../img/tiendaderopa.png");
   background-repeat: no-repeat;
@@ -139,23 +105,25 @@ nav li a:hover {
   width: 1440px;
   height: 790px;
 }
-.section1 .bienvenida {
+
+.bienvenida {
   text-align: center;
   padding: 250px;
   font-weight: 10;
   font-size: 30px;
 }
-.section1 .text1 {
+.bienvenida .text1 {
   color: #fff;
   font-weight: 1;
 }
-.section1 .text2 {
+.bienvenida .text2 {
   color: #fff;
   font-weight: 1;
   padding-bottom: 5px;
   margin: 0px;
 }
-.section1 .azultext3 {
+
+.azultext3 {
   display: inline-block;
   color: #0084ff;
   padding: 10px 0.9em;
@@ -169,25 +137,204 @@ nav li a:hover {
   border-radius: 50px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.section1 .azultext2 {
-  color: rgb(0, 132, 255);
+.azultext3 .azultext2 {
+  color: #0084ff;
   text-decoration: bold;
   font-weight: 10;
 }
 
 /*-------- RESPONSIVE --------*/
-@media screen and (max-width: 768px) {
-  .section1 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 768px;
-    height: 724px;
-    text-decoration: none;
-  }
-}
 /* BARRA LATERAL */
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .section1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 724px;
+    text-decoration: none;
+  }
+  .section1 .losted {
+    width: 180px;
+  }
+}
+/*-------- RESPONSIVE --------*/
+.sobremi {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #191919;
+  color: red;
+}
+.sobremi .sobremi-sub {
+  color: red;
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+.sobremi img {
+  height: auto;
+  color: red;
+  width: 430px;
+}
+
+.sobremi-text {
+  width: 550px;
+}
+
+.sobremi-text {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.sobremi-text p {
+  color: rgba(255, 204, 255, 0.8);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+.sobremi-text h2 {
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 9px 25px;
+  background-color: #0084ff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 1s ease 0s;
+}
+.button:hover {
+  background-color: transparent;
+  border: 2px solid rgba(0, 132, 255, 0.6705882353);
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  .main {
+    padding-top: 20px;
+  }
+  .main .sobremi-nosotros {
+    padding-left: 18px;
+    padding-right: 90px;
+  }
+  .main .sobremi-sub {
+    padding-left: 25px;
+  }
+  .main .sobremi-p {
+    padding-left: 25px;
+    padding-right: 80px;
+  }
+  .main .button {
+    margin-left: 25px;
+  }
+}
+.servicios {
+  text-align: center;
+}
+.servicios h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #3498db;
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.cen {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.servicio {
+  display: inline-block;
+  width: 50%;
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.servicio:hover {
+  background: rgba(221, 221, 221, 0.514);
+}
+.servicio p {
+  color: rgba(0, 0, 0, 0.685);
+  font-size: 15px;
+  font-weight: 500;
+}
+.servicio i {
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.servicio i h2 {
+  color: #3498db;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .servicio {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .servicio {
+    width: 100%;
+  }
+}
+#galeria {
+  background-color: #191919;
+  color: white;
+  padding-bottom: 7%;
+}
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+
+#galeria img {
+  width: 100%;
+  height: 350px;
+}
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
+
+.productosh1 {
+  color: #0084ff;
+  text-decoration: underline;
+}
+
+.col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
 }
 
 .contacto {
@@ -260,7 +407,7 @@ nav li a:hover {
   background-color: #0a141d;
 }
 
-.footer .grupo-1 {
+.grupo-1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -269,30 +416,25 @@ nav li a:hover {
   grid-gap: 50px;
   padding: 45px 0px;
 }
-
-.footer .grupo-1 .box figure {
+.grupo-1 .box figure {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-
-.footer .grupo-1 .box figure img {
+.grupo-1 .box figure img {
   width: 250px;
 }
-
-.footer .grupo-1 .box h2 {
+.grupo-1 .box h2 {
   color: #fff;
   margin-bottom: 25px;
   font-size: 20px;
 }
-
-.footer .grupo-1 .box p {
+.grupo-1 .box p {
   color: #efefef;
   margin-bottom: 10px;
 }
-
-.footer .grupo-1 .redsocial a {
+.grupo-1 .redsocial a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -304,25 +446,28 @@ nav li a:hover {
   text-align: center;
   transition: all 300ms ease;
 }
-
-.footer .grupo-1 .redsocial a:hover {
+.grupo-1:hover {
+  transition: 0.75s;
   color: aqua;
 }
 
-.footer .grupo-2 {
-  background-color: #0a1a2a;
+.grupo-2 {
+  background-color: rgba(0, 116, 224, 0.3764705882);
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
   color: #fff;
 }
-
-.footer .grupo-2 small {
+.grupo-2 .grupo-2 small {
   font-size: 15px;
   text-align: center;
 }
 
+.aquacolor {
+  color: white;
+}
 .aquacolor:hover {
+  transition: 0.75s;
   color: aqua;
 }
 

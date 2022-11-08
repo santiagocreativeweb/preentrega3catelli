@@ -1,0 +1,565 @@
+/*-------- SETTINGS --------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+  
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #252525;
+
+}
+
+/*-------- SETTINGS --------*/
+
+/*-------- HEADER --------*/
+
+nav{
+  background: #0c85d65d;
+  height: 80px;
+  width: 100%;
+}
+.enlace{
+  position: absolute;
+  padding: 10px 15px;
+}
+.losted{
+  height: 90px;
+  width: 350px;
+  padding-bottom: 25px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li a:hover{
+  background: #0c85d641;
+  color: white;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+/*-------- RESPONSIVE --------*/
+
+@media (max-width: 768px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+
+}
+
+@media (max-width: 768px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: #2c3e50;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
+
+
+@media (max-width: 320px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 320px;
+      height: 100%;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: #2c3e50;
+  }
+  #check:checked ~ ul{
+      left: 0;
+  }
+}
+
+
+/*-------- HEADER --------*/
+
+/*-------- SECTION CONTACTO --------*/
+
+.contacto {
+  text-decoration: none;
+  padding: 100px;
+}
+
+.form-area {
+	padding-top: 7%;
+}
+.row.single-form {
+	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+.izquierda {
+	background: #0c85d677;
+	padding: 200px 98px;
+  text-align: center;
+}
+.izquierda h2 {
+  font-family: poppins;
+	color: #fff;
+	font-weight: 100;
+	font-size: 48px;
+}
+.izquierda h2 span {
+	font-weight: 0;
+}
+.single-form{
+    background: #fff;
+}
+.derecha {
+	padding: 70px 100px;
+	position: relative;
+}
+
+.derecha button {
+	border: none;
+	border-radius: 2px;
+	background: #252525;
+	width: 180px;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+/*-------- RESPONSIVE --------*/
+
+@media (max-width: 768px){
+.left {
+  padding: 90px 15px;
+  text-align: center;
+}
+.left h2 {
+  font-size: 25px;
+}
+.derecha {
+  padding: 25px;
+}
+.derecha i {
+  top: -52px;
+  transform: rotate(90deg);
+  left: 46%;
+}
+.derecha button {
+	width: 150px;
+	padding: 12px 0;
+}
+    
+}
+
+/*-------- SECTION CONTACTO --------*/
+
+/*-------- SECTION INICIO --------*/
+
+.section1{
+  background: url("../img/tiendaderopa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1440px;
+  height: 790px;
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 250px;
+  font-weight: 10;
+  font-size: 30px;
+}
+
+.text1 {
+  color: #fff;
+  font-weight: 01;
+}
+
+.text2 {
+  color: #fff;
+  font-weight: 01;
+  padding-bottom: 5px;
+  margin: 0px;
+}
+
+.azultext3 {
+  display: inline-block;
+  color: #0084ff;
+  padding: 10px 0.9em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #0074e060;
+  border-radius: 50px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.azultext2 {
+  color: rgb(0, 132, 255);
+  text-decoration: bold;
+  font-weight: 10;
+}
+
+
+/*-------- RESPONSIVE --------*/
+
+@media screen and (max-width: 768px){
+
+.section1{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 768px;
+  height: 724px;
+  text-decoration: none;
+}
+}
+
+
+/* BARRA LATERAL */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media screen and (max-width: 320px){
+
+  .section1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 724px;
+    text-decoration: none;
+  }
+
+  .losted {
+    width: 180px;
+  }
+
+  }
+
+
+/*-------- SECTION INICIO --------*/
+
+/*-------- SECTION NOSOTROS --------*/
+
+.sobremi{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+	color: red;
+}
+.sobremi-sub {
+	color: red;
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+.sobremi img{
+	height: auto;
+	color: red;
+	width: 430px;
+}
+.sobremi-text{
+	width: 550px;
+}
+
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.sobremi-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.sobremi-text{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.sobremi-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.button{
+	 padding: 9px 25px;
+    background-color: #0084ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+.button:hover{
+	background-color: transparent;
+	border: 2px solid #0084ffab;
+  color: white;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .main{
+    padding-top: 20px;
+  }
+  .sobremi-nosotros {
+    padding-left:  18px;
+    padding-right:  90px;
+  }
+  .sobremi-sub {
+    padding-left: 25px;
+  }
+  .sobremi-p {
+    padding-left: 25px;
+    padding-right: 80px;
+  }
+  .button {
+    margin-left: 25px;
+  }
+}
+
+/*-------- SECTION NOSOTROS --------*/
+
+/*-------- SECTION PRODUCTOS BOOSTRAP --------*/
+
+#galeria img {
+  width: 100%;
+  height: 350px;
+}
+
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
+
+#galeria {
+  background-color: #191919;
+  color: white;
+  padding-bottom: 7%;
+}
+
+.productosh1 {
+  color: #0084ff;
+  text-decoration: underline;
+}
+
+/*-------- SECTION PRODUCTOS BOOSTRAP --------*/
+
+/*-------- SECTION SERVICIOS --------*/
+
+.servicios{
+  text-align: center;
+}
+.servicios h1{
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #3498db;
+  margin-top: 40px; 
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.servicio{
+  display: inline-block;
+  width: 50%;
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.servicio:hover{
+  background: rgba(221, 221, 221, 0.514);
+}
+.servicio i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px
+}
+.servicio h2{
+  color: #3498db;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.servicio p{
+  color: rgba(0, 0, 0, 0.685);
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .servicio{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .servicio{
+    width: 100%;
+  }
+}
+
+
+/*-------- SECTION SERVICIOS --------*/
+
+
+
+/*-------- FOOTER --------*/
+
+.footer{
+  background-color: #0a141d;
+}
+.footer .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footer .grupo-1 .box figure{
+width: 100%;
+height: 100%;
+display: flex;
+
+align-items: center;
+}
+.footer .grupo-1 .box figure img{
+  width: 250px;
+}
+.footer .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+
+}
+.footer .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.footer .grupo-1 .redsocial a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+} 
+.footer .grupo-1 .redsocial a:hover{
+  color: aqua;
+}
+.footer .grupo-2{
+  background-color: #0a1a2a ;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #fff;
+}
+.footer .grupo-2 small{
+  font-size: 15px;
+  text-align: center;
+}
+
+.aquacolor:hover{
+  color: aqua;
+}
+
+
+/*-------- FOOTER --------*/
+

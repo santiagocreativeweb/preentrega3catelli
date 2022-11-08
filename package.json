@@ -1,0 +1,23 @@
+{
+  "name": "preentrega3catelli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch scss/main.scss css/main.css"
+  },
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagocreativeweb/preentrega2catelli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiagocreativeweb/preentrega2catelli/issues"
+  },
+  "homepage": "https://github.com/santiagocreativeweb/preentrega2catelli#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

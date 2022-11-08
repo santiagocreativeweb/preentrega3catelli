@@ -1,0 +1,77 @@
+$color: #0c85d677;
+$colornavbarwhite: #fff;
+$colorbackground: #252525;
+$shadow-box: rgba(0,0,0,0.5);
+
+
+.contacto {
+    text-decoration: none;
+    padding: 100px;
+
+    .form-area {
+        padding-top: 7%;
+    }
+    .row.single-form {
+        box-shadow: 0 2px 20px -5px $shadow-box;
+    }
+    .izquierda {
+      background: $color;
+      padding: 200px 98px;
+      text-align: center;
+    }
+    .izquierda h2 {
+        font-family: poppins;
+        color: $colornavbarwhite;
+        font-weight: 100;
+        font-size: 48px;
+    }
+    .izquierda h2 span {
+        font-weight: 0;
+    }
+    .single-form{
+        background: $colornavbarwhite;
+    }
+    .derecha {
+        padding: 70px 100px;
+        position: relative;
+    }
+    
+    .derecha button {
+        border: none;
+        border-radius: 2px;
+        background: $colorbackground;
+        width: 180px;
+        color: $colornavbarwhite;
+        padding: 15px 0;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+  
+  /*-------- RESPONSIVE --------*/
+  
+  @media (max-width: 768px){
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+    .left h2 {
+        font-size: 25px;
+      }
+      .derecha {
+        padding: 25px;
+      }
+      .derecha i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 46%;
+      }
+      .derecha button {
+          width: 150px;
+          padding: 12px 0;
+      }
+  }
+  
+      
+  }
